@@ -1,11 +1,11 @@
 function renderNav(activePage) {
   var pages = [
-    { id: 'home',     href: 'index.html',          label: 'Home' },
-    { id: 'using',    href: 'using-ranxt.html',     label: 'Using ranxt' },
-    { id: 'contact',  href: 'contact.html',         label: 'Contact Us' },
-    { id: 'privacy',  href: 'privacy-policy.html',  label: 'Privacy Policy' },
-    { id: 'terms',    href: 'terms-of-service.html', label: 'Terms of Service' },
-    { id: 'delete',   href: 'delete-data.html',     label: 'Delete Data' }
+    { id: 'home',     href: '/index.html',               label: 'Home' },
+    { id: 'using',    href: '/using-ranxt.html',         label: 'Using ranxt' },
+    { id: 'contact',  href: '/home/contact-us.html',     label: 'Contact Us' },
+    { id: 'privacy',  href: '/home/privacy-policy.html', label: 'Privacy Policy' },
+    { id: 'terms',    href: '/home/terms-of-service.html', label: 'Terms of Service' },
+    { id: 'delete',   href: '/delete-data.html',         label: 'Delete Data' }
   ];
 
   var links = pages.map(function(p) {
@@ -15,8 +15,8 @@ function renderNav(activePage) {
 
   document.getElementById('site-nav').innerHTML = '<nav>\n' +
     '  <div class="container">\n' +
-    '    <a href="index.html" class="logo-link">\n' +
-    '      <img src="images/ranxt_icon_name.png" alt="ranxt">\n' +
+    '    <a href="/index.html" class="logo-link">\n' +
+    '      <img src="/images/ranxt_icon_name.png" alt="ranxt">\n' +
     '    </a>\n' +
     '    <button class="nav-toggle" aria-label="Menu">\u2630</button>\n' +
     '    <ul class="nav-links">\n' +
