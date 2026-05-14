@@ -5,7 +5,7 @@ function renderNav(activePage) {
     { id: 'contact',  href: '/home/contact-us.html',     label: 'Contact Us' },
     { id: 'privacy',  href: '/home/privacy-policy.html', label: 'Privacy Policy' },
     { id: 'terms',    href: '/home/terms-of-service.html', label: 'Terms of Service' },
-    { id: 'delete',   href: '/delete-data.html',         label: 'Delete Data' }
+    { id: 'delete',   href: '/home/delete-data.html',    label: 'Delete Data' }
   ];
 
   var links = pages.map(function(p) {
