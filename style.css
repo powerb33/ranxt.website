@@ -4,6 +4,7 @@
 :root {
   --bg: #1a8fc4;
   --bg-dark: #006496;
+  --bg-card: color-mix(in srgb, var(--bg-dark) 70%, transparent);
   --bg-section: #1a8fc4;
   --bg-section-alt: #1580b2;
   --text: #ffffff;
@@ -36,7 +37,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--bg-dark);
+  background: var(--bg-card);
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
 }
@@ -76,7 +77,7 @@ nav .nav-links a.active { color: #fff; }
     position: absolute;
     top: 100%;
     left: 0; right: 0;
-    background: var(--bg-dark);
+    background: var(--bg-card);
     padding: 16px 24px;
     gap: 16px;
     border-bottom: 1px solid var(--border);
@@ -131,7 +132,7 @@ nav .nav-links a.active { color: #fff; }
   gap: 24px;
 }
 .feature-card {
-  background: rgba(0,0,0,.12);
+  background: var(--bg-card);
   border-radius: 12px;
   padding: 28px;
   border: 1px solid rgba(255,255,255,.1);
@@ -166,7 +167,7 @@ nav .nav-links a.active { color: #fff; }
   margin-bottom: 40px;
 }
 .how-to-card {
-  background: rgba(0,0,0,.12);
+  background: var(--bg-card);
   border-radius: 12px;
   padding: 32px;
   border: 1px solid rgba(255,255,255,.1);
@@ -268,7 +269,7 @@ nav .nav-links a.active { color: #fff; }
 
 /* ===== Footer ===== */
 footer {
-  background: rgba(0,0,0,.15);
+  background: var(--bg-card);
   border-top: 1px solid var(--border);
   padding: 24px 0;
   text-align: center;
