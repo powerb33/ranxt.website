@@ -10,7 +10,8 @@ function renderNav(activePage) {
 
   var links = pages.map(function(p) {
     var activeClass = (p.id === activePage) ? ' class="active"' : '';
-    return '<li><a href="' + p.href + '"' + activeClass + '>' + p.label + '</a></li>';
+    var targetAttr = p.external ? ' target="_blank" rel="noopener"' : '';
+    return '<li><a href="' + p.href + '"' + activeClass + targetAttr + '>' + p.label + '</a></li>';
   }).join('\n      ');
 
   document.getElementById('site-nav').innerHTML = '<nav>\n' +
